@@ -1,7 +1,10 @@
+.main-page{
+    font-family:'Comic Sans MS',cursive;
+}
+
 body{
     margin:0;
     padding:0;
-    font-family:'Comic Sans MS', cursive;
     background: linear-gradient(to bottom, #ffe6f0, #ffd9ec);
     text-align:center;
     color: #ff1493;
