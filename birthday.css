@@ -1,0 +1,224 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:'Comic Sans MS', cursive;
+    background: linear-gradient(to bottom, #ffe6f0, #ffd9ec);
+    text-align:center;
+    color: #ff1493;
+}
+
+.container{
+    padding: 30px;
+    max-width: 600px;
+    margin: auto;
+}
+
+h1{
+    font-size: 3em;
+    margin-bottom:10px;
+}
+
+.sticker{
+    width: 300px;
+    margin: 20px 0;
+}
+
+.messagebox {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;     
+  margin-top: 30px;
+  position:relative;
+  z-index:2;
+}
+
+p{
+    font-size: 2em;
+    margin-bottom:10px;
+}
+
+.messagebox img{
+    width:900px;
+    max-width:90%;
+    display:block;
+    margin:0 auto;
+    pointer-events:none;
+    position:relative;
+    z-index:1;
+}
+
+.messagebox button{
+    background-color:#ff69b4;
+    color:rgb(11, 10, 10);
+    border: none;
+    padding:10px 20px;
+    font-size:1.2em;
+    border-radius:50px;
+    margin-top:10px;
+    cursor: pointer;
+    transition:0.3s ease;
+    position:relative;
+    z-index:2;
+}
+
+.messagebox button:hover{
+    background-color:#ff1493;
+}
+
+.popup{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.7);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index:10;
+}
+
+.popup-content{
+    background:rgb(245, 221, 242);
+    padding:30px;
+    border-radius:15px;
+    width:80%;
+    max-width:400px;
+    text-align:center;
+    position:relative;
+}
+
+#typewriter-message{
+    font-family:'Dancing Script',cursive;
+    font-size:1.4em;
+    color: rgb(216, 79, 143);
+    white-space:pre-line;
+    line-height:1.6;
+    text-align:left;
+    padding:10px;
+}
+
+.popup-content .close{
+    position:absolute;
+    top:8px;
+    right:15px;
+    font-size:25px;
+    cursor:pointer;
+    color:rgb(67, 30, 30);
+}
+
+.hidden{
+    display:none !important;
+}
+
+.video-section{
+    margin-top:40px;
+}
+
+.video-section container{
+    font-size:2em;
+    margin-bottom:10px;
+}
+
+.video-section button{
+    background-color:#ff69b4;
+    color:rgb(11, 10, 10);
+    border:none;
+    padding:10px 20px;
+    font-size:1.2em;
+    border-radius:50px;
+    cursor:pointer;
+    transition:0.3s ease;
+    margin-bottom:15px;
+}
+
+.video-section button:hover{
+    background-color:#ff1493;
+}
+
+.video-wrapper {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#video-container video {
+    border: 5px solid #ffc0cb;
+    border-radius: 15px;
+    max-width: 90%;
+}
+
+.container button {
+    background-color: #ff69b4;
+    color: rgb(11, 10, 10);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 50px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.container button:hover {
+    background-color: #ff1493;
+}
+
+.balloon-container{
+    position:fixed;
+    bottom:-150px;
+    left:0;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+    overflow:hidden;
+    z-index:0;
+}
+
+.balloon{
+    width:150px;
+    height:200px;
+    border-radius:50%;
+    position:absolute;
+    bottom:-100px;
+    animation:float-up 4s ease-out forwards;
+    opacity:1;
+}
+
+.string{
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1000px;
+    height: 280px;
+}
+
+
+.balloon:nth-child(1)  { background-color: #d21d8d; left: 10%; bottom:-80px; animation-delay: 0.5s; }
+.balloon:nth-child(2)  { background-color: #ff4d4d; left: 20%; bottom:-100px; animation-delay: 1.4s; }
+
+.balloon:nth-child(3)  { background-color: #ec4096; left: 30%; bottom:-90px; animation-delay: 0.1s; }
+.balloon:nth-child(4)  { background-color: #d62db7; left: 40%; bottom:-110px; animation-delay: 1s; }
+
+.balloon:nth-child(5)  { background-color: #8abdf1; left: 50%; bottom:-85px; animation-delay: 0.3s; }
+.balloon:nth-child(6)  { background-color: #80afdf; left: 60%; bottom:-95px; animation-delay: 1.6s; }
+
+.balloon:nth-child(7)  { background-color: #8dfd8d; left: 70%; bottom:-100px; animation-delay: 0.7s; }
+.balloon:nth-child(8)  { background-color: #4ad44a; left: 80%; bottom:-90px; animation-delay: 1.2s; }
+
+.balloon:nth-child(9)  { background-color: #f1f176; left: 90%; bottom:-105px; animation-delay: 0.8s; }
+.balloon:nth-child(10) { background-color: #f2ff66; left: 105%; bottom:-87px; animation-delay: 1.7s; }
+
+
+@keyframes float-up{
+    0%{
+        transform:translateY(0) rotate(0deg);
+        opacity:1;
+    }
+    
+    100%{
+        transform:translateY(-1200px) rotate(10deg);
+        opacity:1;
+    }
+}
